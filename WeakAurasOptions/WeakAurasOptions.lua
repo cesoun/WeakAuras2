@@ -607,9 +607,9 @@ function WeakAuras.ToggleOptions(msg, Private)
 
   if(frame and frame:IsVisible()) then
     WeakAuras.HideOptions();
-  elseif (InCombatLockdown()) then
-    WeakAuras.prettyPrint(L["Options will open after combat ends."])
-    reopenAfterCombat = true;
+  -- elseif (InCombatLockdown()) then
+  --   WeakAuras.prettyPrint(L["Options will open after combat ends."])
+  --   reopenAfterCombat = true;
   else
     WeakAuras.ShowOptions(msg);
   end
